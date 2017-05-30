@@ -6,7 +6,8 @@ class DefaultController extends Controller {
     public $param = 'value';
 
     public function actionIndex() {
-        $this->render('index');
+        $banner_list = Banners::model()->findAll(array("condition"=>"status ='1' AND deleted = '0'"));
+        $this->render('index',array('banner_list'=>$banner_list));
     }
 
     public function actionLoginCheck() {
