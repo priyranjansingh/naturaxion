@@ -19,7 +19,18 @@ class DefaultController extends Controller {
     }
 
     public function actionAbout() {
-        $this->render('about');
+        Yii::import('application.modules.admin.models.Pages');
+        $about_us_content = Pages::model()->find(array("condition"=>"page_name='a' AND status ='1' AND deleted = '0'"));
+        //pre($about_us_content,true);
+        $this->render('about',array('about_us_content'=>$about_us_content));
     }
+    
+    public function actionContact() {
+        Yii::import('application.modules.admin.models.Pages');
+        $contact_us_content = Pages::model()->find(array("condition"=>"page_name='c' AND status ='1' AND deleted = '0'"));
+        $this->render('contact',array('contact_us_content'=>$contact_us_content));
+    }
+    
+    
 
 }

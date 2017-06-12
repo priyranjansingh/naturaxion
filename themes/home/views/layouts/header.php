@@ -40,7 +40,7 @@
                                         <li><a href="ayurveda.html" class="active">AYURVEDA</a></li>
                                         <li><a href="product.html">OUR PRODUCTS</a></li>
                                         <li><a href="shop.html">SHOP</a></li>
-                                        <li><a href="joinus.html">JOIN US</a></li>
+                                        <li><a href="<?php echo base_url().'/contact-us'; ?>">CONTACT US</a></li>
                                         <li><a href="clinic.html">CLINIC</a></li>
                                         <li><a href="experience.html">Consumer Experience</a></li>
                                         <li><a href="contact.html">CONTACT</a></li>

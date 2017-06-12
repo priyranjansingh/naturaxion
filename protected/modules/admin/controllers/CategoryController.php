@@ -86,6 +86,9 @@ class CategoryController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+		$criteria = new CDbCriteria;
+		$criteria->addCondition( "category" , $id );
+		Product::model()->updateAll(array('deleted'=>'1'), $criteria);
 		$this->loadModel($id)->delete();
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser

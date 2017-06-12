@@ -1,7 +1,7 @@
 <section class="content-header">
     <h1>
         Add
-        <small>Version</small>
+        <small>Category</small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="<?php echo base_url() . '/admin/dashboard'; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>

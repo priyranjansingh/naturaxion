@@ -42,11 +42,6 @@ class DashboardController extends Controller {
             $last_five_customers = Users::model()->findAll(array("condition"=>"is_admin = 0 ","limit"=>5,"order"=> "date_entered DESC"));
             $data_arr['last_five_customer'] = $last_five_customers;
             
-            // getting last five transactions
-             
-            $last_five_trans = Transactions::model()->findAll(array("condition"=>"deleted = 0 ","limit"=>5,"order"=> "date_entered DESC"));
-            $data_arr['last_five_trans'] = $last_five_trans;
-            
             $this->render('index',array('data_arr'=>$data_arr));
         } else {
             $this->redirect(CController::createUrl("/admin/login"));

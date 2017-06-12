@@ -99,7 +99,7 @@ function uploadThumb($name, $type, $tmp_name, $path) {
     $target_path = $base_path . $path . "/thumb/";
     $tmp = explode('.', $name);
     $extension = end($tmp);
-    $randomName = 'thumbnail-' . rand(123456, 1234567890) . '.' . $extension;
+    $randomName = create_guid() . '.' . $extension;
     /* Add the original filename to our target path.  
       Result is "images/uploads/filename.extension" */
     $target_path = $target_path . basename($randomName);
@@ -111,13 +111,13 @@ function uploadThumb($name, $type, $tmp_name, $path) {
     return $randomName;
 }
 
-function uploadImage($name, $type, $tmp_name, $path) {
+function uploadImage($name, $type, $tmp_name) {
     // Where the file is going to be placed 
     $base_path = Yii::app()->params['upload_path'];
-    $target_path = $base_path . $path . "/";
+    $target_path = $base_path;
     $tmp = explode('.', $name);
     $extension = end($tmp);
-    $randomName = rand(123456, 1234567890) . '.' . $extension;
+    $randomName = create_guid() . '.' . $extension;
     /* Add the original filename to our target path.  
       Result is "images/uploads/filename.extension" */
     $target_path = $target_path . basename($randomName);

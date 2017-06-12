@@ -54,6 +54,7 @@ return array(
             'urlFormat' => 'path',
             'rules' => array(
                 'about-us' => 'home/default/about',
+                'contact-us' => 'home/default/contact',
                 'media' => 'home/default/media',
                 '<module:(admin)>/<controller:\w+>/<action:\w+>/<id:(.*?)>' => '<module>/<controller>/<action>/<id>',
                 '<module:(admin)>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>',

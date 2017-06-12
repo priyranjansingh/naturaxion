@@ -7,7 +7,10 @@
 (function ($, AdminLTE) {
 
   "use strict";
-
+	
+	$('input.bootstrap-datepicker').datepicker({
+		format: "yyyy-mm-dd"
+	});
   /**
    * List of all the available skins
    *

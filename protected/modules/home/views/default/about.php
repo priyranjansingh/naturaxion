@@ -24,7 +24,9 @@ $baseUrl = Yii::app()->theme->baseUrl;
         <h1>ABOUT US</h1> 
         <div class="col-md-12">
           <div class="box_left">
-            <p class="animated bounceInRight go">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus molestie velit ut urna facilisis gravida. Aliquam erat volutpat. Maecenas sed hendrerit enim. Praesent eu dignissim augue. Integer odio lectus, sodales sit amet scelerisque a, condimentum at magna. Fusce laoreet tellus ut volutpat molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus molestie velit ut urna facilisis gravida. Aliquam erat volutpat. Maecenas sed hendrerit enim. Praesent eu dignissim augue. Integer odio lectus, sodales sit amet scelerisque a, condimentum at magna. Fusce laoreet tellus ut volutpat molestie. </p>
+            <p class="animated bounceInRight go">
+                <?php echo $about_us_content->description;  ?>
+            </p>
           </div>
           <div class="box_right animated bounceInLeft go"><img src="<?php echo $baseUrl; ?>/img/img2.jpg" alt=""></div>
         </div>
