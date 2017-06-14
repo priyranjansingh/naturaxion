@@ -84,8 +84,11 @@ class ProductGalleryController extends Controller
 		$p = Product::model()->findByPk($id);
 		if($p === null){
 			$model=$this->loadModel($id);
+			$product = $model->product;
+			$gallery = ProductGallery::model()->findAll(array("condition" => "product = '".$model->product."'"));
 		} else {
 			$model = new ProductGallery;
+			$product = $id;
 			$gallery = ProductGallery::model()->findAll(array("condition" => "product = '".$id."'"));
 		}
 
@@ -94,7 +97,6 @@ class ProductGalleryController extends Controller
 
 		if(isset($_POST['ProductGallery']))
 		{
-			pre($_FILES, true);
 			ProductGallery::model()->deleteAll(['product' => $_POST['ProductGallery']['product']]);
 			$r = count($_FILES['ProductGallery']['image']);
 			for ($i=0; $i<$r; $i++) {
@@ -117,7 +119,7 @@ class ProductGalleryController extends Controller
 		$this->render('update',array(
 			'model' => $model,
 			'gallery'=>$gallery,
-			'product'=>$id
+			'product'=>$product
 		));
 	}
 
