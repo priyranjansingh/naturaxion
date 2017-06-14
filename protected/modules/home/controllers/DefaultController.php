@@ -6,6 +6,9 @@ class DefaultController extends Controller {
     public $param = 'value';
 
     public function actionIndex() {
+        Yii::import('application.modules.admin.models.Category');
+        $category_list = Category::model()->findAll(array("condition"=>"status ='1' AND deleted='0'"));
+        pre($category_list,true);
         $banner_list = Banners::model()->findAll(array("condition"=>"status ='1' AND deleted = '0'"));
         $this->render('index',array('banner_list'=>$banner_list));
     }
