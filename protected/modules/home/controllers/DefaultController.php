@@ -7,10 +7,11 @@ class DefaultController extends Controller {
 
     public function actionIndex() {
         Yii::import('application.modules.admin.models.Category');
+        Yii::import('application.modules.admin.models.Product');
+        Yii::import('application.modules.admin.models.ProductGallery');
         $category_list = Category::model()->findAll(array("condition"=>"status ='1' AND deleted='0'"));
-        pre($category_list,true);
         $banner_list = Banners::model()->findAll(array("condition"=>"status ='1' AND deleted = '0'"));
-        $this->render('index',array('banner_list'=>$banner_list));
+        $this->render('index',array('banner_list'=>$banner_list,'category_list'=>$category_list));
     }
 
     public function actionLoginCheck() {

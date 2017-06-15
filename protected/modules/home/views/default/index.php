@@ -69,155 +69,33 @@ $baseUrl = Yii::app()->theme->baseUrl;
 <div class="product_area">
     <div class="container">
         <div class="row">
-            <div class="product_inner">
-                <h1>ALL PRODUCTS</h1>
-                <h2>Healthcare</h2>        
-                <div class="col-md-12">        
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img6.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
+            <?php
+            foreach ($category_list as $category) {
+                if (!empty($category->product_list)) {
+                    ?>
+                    <div class="product_inner">
+                        <h2><?php echo $category->name; ?></h2> 
+                        <div class="col-md-12"> 
+                            <?php
+                            foreach ($category->product_list as $product) {
+                                ?>   
+                                <div class="col-md-3">
+                                    <div class="box_pro">
+                                        <div class="price_tag">$<?php echo $product->price; ?></div>
+                                        <div><a href="product_details.html"><img height="156px" width="222px" src="<?php echo base_url(); ?>/images/products/<?php echo (!empty($product->product_main_image[0]->image)) ? $product->product_main_image[0]->image : ''; ?>" alt=""></a></div>
+                                        <h1><?php echo $product->name; ?></h1>
+                                        <p><?php echo $product->short_desc; ?></p>
+                                    </div>
+                                </div>
+                                <?php
+                            }
+                            ?>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img7.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img8.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img9.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product_inner">
-                <h2>Nutraceutical</h2>        
-                <div class="col-md-12">        
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img6.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img7.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img8.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img9.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product_inner">
-                <h2>Oral care</h2>        
-                <div class="col-md-12">        
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img6.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img7.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img8.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img9.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product_inner">
-                <h2>Body care</h2>        
-                <div class="col-md-12">        
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img6.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img7.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img8.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="box_pro">
-                            <div class="price_tag">$30</div>
-                            <div><a href="product_details.html"><img src="<?php echo $baseUrl; ?>/img/img9.jpg" alt=""></a></div>
-                            <h1>Lorem ipsum dolor sit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <?php
+                }
+            }
+            ?>
         </div>
     </div>
 </div>

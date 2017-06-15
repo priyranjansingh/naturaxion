@@ -25816,3 +25816,670 @@ Stack trace:
 REQUEST_URI=/naturaxion/themes/home/img/loading.gif
 HTTP_REFERER=http://localhost/naturaxion/
 ---
+2017/06/14 17:53:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/14 17:53:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/14 17:53:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/14 19:08:56 [error] [php] include(Product.php): failed to open stream: No such file or directory (C:\xampp\htdocs\naturaxion\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveFinder.php(182): model()
+#2 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveFinder.php(230): CActiveFinder->getModel()
+#3 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveRecord.php(912): CActiveFinder->__construct()
+#5 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveRecord.php(280): Category->getActiveFinder()
+#6 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveRecord.php(143): Category->getRelated()
+#7 C:\xampp\htdocs\naturaxion\protected\modules\home\controllers\DefaultController.php(11): Category->__get()
+#8 C:\xampp\htdocs\naturaxion\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#9 C:\xampp\htdocs\naturaxion\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\naturaxion\framework\web\CController.php(286): DefaultController->runAction()
+#11 C:\xampp\htdocs\naturaxion\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#12 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(282): DefaultController->run()
+#13 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\naturaxion\index.php(13): CWebApplication->run()
+REQUEST_URI=/naturaxion/
+in C:\xampp\htdocs\naturaxion\protected\modules\home\controllers\DefaultController.php (11)
+in C:\xampp\htdocs\naturaxion\index.php (13)
+2017/06/14 19:46:22 [error] [php] include(ProductGallery.php): failed to open stream: No such file or directory (C:\xampp\htdocs\naturaxion\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveFinder.php(182): model()
+#2 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveFinder.php(230): CActiveFinder->getModel()
+#3 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveRecord.php(912): CActiveFinder->__construct()
+#5 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveRecord.php(280): Product->getActiveFinder()
+#6 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveRecord.php(143): Product->getRelated()
+#7 C:\xampp\htdocs\naturaxion\protected\modules\home\controllers\DefaultController.php(12): Product->__get()
+#8 C:\xampp\htdocs\naturaxion\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#9 C:\xampp\htdocs\naturaxion\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\naturaxion\framework\web\CController.php(286): DefaultController->runAction()
+#11 C:\xampp\htdocs\naturaxion\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#12 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(282): DefaultController->run()
+#13 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\naturaxion\index.php(13): CWebApplication->run()
+REQUEST_URI=/naturaxion/
+in C:\xampp\htdocs\naturaxion\protected\modules\home\controllers\DefaultController.php (12)
+in C:\xampp\htdocs\naturaxion\index.php (13)
+2017/06/14 19:46:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm' in 'where clause'. The SQL statement executed was: SELECT `product_main_image`.`id` AS `t1_c0`, `product_main_image`.`product` AS `t1_c1`, `product_main_image`.`image_type` AS `t1_c2`, `product_main_image`.`image` AS `t1_c3`, `product_main_image`.`status` AS `t1_c4`, `product_main_image`.`deleted` AS `t1_c5`, `product_main_image`.`created_by` AS `t1_c6`, `product_main_image`.`modified_by` AS `t1_c7`, `product_main_image`.`date_entered` AS `t1_c8`, `product_main_image`.`date_modified` AS `t1_c9` FROM `product_gallery` `product_main_image`  WHERE (product_main_image.image_type = m) AND (`product_main_image`.`product`=:ypl0).
+in C:\xampp\htdocs\naturaxion\protected\modules\home\controllers\DefaultController.php (13)
+in C:\xampp\htdocs\naturaxion\index.php (13)
+2017/06/14 19:46:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm' in 'where clause'. The SQL statement executed was: SELECT `product_main_image`.`id` AS `t1_c0`, `product_main_image`.`product` AS `t1_c1`, `product_main_image`.`image_type` AS `t1_c2`, `product_main_image`.`image` AS `t1_c3`, `product_main_image`.`status` AS `t1_c4`, `product_main_image`.`deleted` AS `t1_c5`, `product_main_image`.`created_by` AS `t1_c6`, `product_main_image`.`modified_by` AS `t1_c7`, `product_main_image`.`date_entered` AS `t1_c8`, `product_main_image`.`date_modified` AS `t1_c9` FROM `product_gallery` `product_main_image`  WHERE (product_main_image.image_type = m) AND (`product_main_image`.`product`=:ypl0)' in C:\xampp\htdocs\naturaxion\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveFinder.php(808): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveFinder.php(509): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveFinder.php(163): CJoinElement->lazyFind(Object(Product))
+#4 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveRecord.php(281): CActiveFinder->lazyFind(Object(Product))
+#5 C:\xampp\htdocs\naturaxion\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('product_main_im...')
+#6 C:\xampp\htdocs\naturaxion\protected\modules\home\controllers\DefaultController.php(13): CActiveRecord->__get('product_main_im...')
+#7 C:\xampp\htdocs\naturaxion\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#8 C:\xampp\htdocs\naturaxion\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\naturaxion\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\naturaxion\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/naturaxion/
+---
+2017/06/14 19:49:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/14 19:49:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/14 19:49:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/14 19:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/14 19:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/14 19:59:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/14 19:59:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 15:18:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 15:18:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 15:18:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 15:36:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 15:36:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 15:38:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 15:38:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:26:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:26:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/img6.jpg".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('img/img6.jpg')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/img/img6.jpg
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:26:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:33:49 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\naturaxion\protected\modules\home\views\default\index.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CController.php(869): DefaultController->renderFile()
+#1 C:\xampp\htdocs\naturaxion\framework\web\CController.php(782): DefaultController->renderPartial()
+#2 C:\xampp\htdocs\naturaxion\protected\modules\home\controllers\DefaultController.php(14): DefaultController->render()
+#3 C:\xampp\htdocs\naturaxion\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#4 C:\xampp\htdocs\naturaxion\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\naturaxion\framework\web\CController.php(286): DefaultController->runAction()
+#6 C:\xampp\htdocs\naturaxion\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#7 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(282): DefaultController->run()
+#8 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\naturaxion\index.php(13): CWebApplication->run()
+REQUEST_URI=/naturaxion/
+in C:\xampp\htdocs\naturaxion\protected\modules\home\views\default\index.php (84)
+in C:\xampp\htdocs\naturaxion\protected\modules\home\controllers\DefaultController.php (14)
+in C:\xampp\htdocs\naturaxion\index.php (13)
+2017/06/15 16:34:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:34:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:34:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/img6.jpg".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('img/img6.jpg')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/img/img6.jpg
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:34:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:35:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:35:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/img6.jpg".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('img/img6.jpg')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/img/img6.jpg
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:35:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:36:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "image/default/products".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('image/default/p...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/image/products/
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:36:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:36:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "image/default/products".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('image/default/p...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/image/products/
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:36:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:36:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:36:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "image/default/products/17fd401e-e653-20c0-5fa3-593e8d348005.jpg".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('image/default/p...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/image/products/17fd401e-e653-20c0-5fa3-593e8d348005.jpg
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:36:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "image/default/products/c75e6d20-2753-2862-64d4-593e87dd3102.jpg".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('image/default/p...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/image/products/c75e6d20-2753-2862-64d4-593e87dd3102.jpg
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:36:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "image/default/products/174f231e-d283-76f2-555f-592882e75b13.png".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('image/default/p...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/image/products/174f231e-d283-76f2-555f-592882e75b13.png
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:36:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "image/default/products/94d5d20e-06ea-b4e0-742e-593c2786e660.jpg".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('image/default/p...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/image/products/94d5d20e-06ea-b4e0-742e-593c2786e660.jpg
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:36:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:37:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:37:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:38:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:38:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:39:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:39:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:46:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:46:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:51:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:51:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:58:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:58:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:59:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 16:59:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 17:00:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 17:00:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 17:21:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 17:21:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 17:22:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 17:22:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 17:22:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 17:22:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 17:23:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 17:23:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 17:23:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 17:23:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 17:24:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/js/modernizr.js".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/js/modernizr.js
+HTTP_REFERER=http://localhost/naturaxion/
+---
+2017/06/15 17:24:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/home/img/loading.gif".' in C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\naturaxion\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\naturaxion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\naturaxion\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/naturaxion/themes/home/img/loading.gif
+HTTP_REFERER=http://localhost/naturaxion/
+---
