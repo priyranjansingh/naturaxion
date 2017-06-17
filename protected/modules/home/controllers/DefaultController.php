@@ -35,6 +35,15 @@ class DefaultController extends Controller {
         $this->render('contact',array('contact_us_content'=>$contact_us_content));
     }
     
+    public function actionProduct($name)
+    {   
+        Yii::import('application.modules.admin.models.Product');
+        Yii::import('application.modules.admin.models.ProductGallery');
+        $product = Product::model()->find(array("condition" => "slug = '$name'"));
+        $this->render('detail',array('product'=>$product));
+        
+    }
+    
     
 
 }

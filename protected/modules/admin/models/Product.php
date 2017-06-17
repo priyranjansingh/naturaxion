@@ -60,6 +60,7 @@ class Product extends AdminBaseModel
 		// class name for the relations automatically generated below.
 		return array(
                     'product_main_image' => array(self::HAS_MANY,'ProductGallery','product','condition' =>'product_main_image.image_type = "m"'),
+                    'product_gallery_image' => array(self::HAS_MANY,'ProductGallery','product','condition' =>'product_gallery_image.image_type = "g"'),
 		);
 	}
 	

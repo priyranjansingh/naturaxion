@@ -82,7 +82,7 @@ $baseUrl = Yii::app()->theme->baseUrl;
                                 <div class="col-md-3">
                                     <div class="box_pro">
                                         <div class="price_tag">$<?php echo $product->price; ?></div>
-                                        <div><a href="product_details.html"><img height="156px" width="222px" src="<?php echo base_url(); ?>/images/products/<?php echo (!empty($product->product_main_image[0]->image)) ? $product->product_main_image[0]->image : ''; ?>" alt=""></a></div>
+                                        <div><a href="<?php echo  base_url().'/product?name='.$product->slug  ?>"><img height="156px" width="222px" src="<?php echo base_url(); ?>/images/products/<?php echo (!empty($product->product_main_image[0]->image)) ? $product->product_main_image[0]->image : ''; ?>" alt=""></a></div>
                                         <h1><?php echo $product->name; ?></h1>
                                         <p><?php echo $product->short_desc; ?></p>
                                     </div>
