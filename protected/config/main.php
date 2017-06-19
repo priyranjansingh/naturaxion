@@ -29,10 +29,6 @@ return array(
         ),
         'admin',
         'home',
-        'songs',
-        'videos',
-        'genre',
-        'user'
     ),
     // application components
     'components' => array(
@@ -54,7 +50,8 @@ return array(
             'urlFormat' => 'path',
             'rules' => array(
                 'faq' => 'home/default/faq',
-                'product' => 'home/default/product',
+                'products' => 'home/default/products',
+				'product' => 'home/default/product',
                 'about-us' => 'home/default/about',
                 'contact-us' => 'home/default/contact',
                 'media' => 'home/default/media',

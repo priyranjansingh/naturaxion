@@ -38,9 +38,34 @@ class DefaultController extends Controller {
     public function actionProduct($name)
     {   
         Yii::import('application.modules.admin.models.Product');
+		Yii::import('application.modules.admin.models.Category');
         Yii::import('application.modules.admin.models.ProductGallery');
+		$categories = Category::model()->findAll(array("condition"=>"status ='1' AND deleted='0'"));
         $product = Product::model()->find(array("condition" => "slug = '$name'"));
-        $this->render('detail',array('product'=>$product));
+        $this->render('detail',array('product'=>$product,'categories'=>$categories));
+        
+    }
+	
+	public function actionProducts()
+    {   
+        Yii::import('application.modules.admin.models.Category');
+        Yii::import('application.modules.admin.models.Product');
+        Yii::import('application.modules.admin.models.ProductGallery');
+        $categories = Category::model()->findAll(array("condition"=>"status ='1' AND deleted='0'"));
+		$dataProvider=new CActiveDataProvider('Product',array(
+			'criteria'=>array(
+				'order'=>'date_entered DESC',
+			),
+			'pagination'=>array(
+                'pageSize'=>5,
+            ),
+        ));
+		$this->render('products',array(
+			'dataProvider'=>$dataProvider,
+			'categories'=>$categories
+		));
+        /*$product = Product::model()->findAll();
+        $this->render('products',array('products'=>$products));*/
         
     }
     

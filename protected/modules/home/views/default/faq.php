@@ -10,18 +10,32 @@ $baseUrl = Yii::app()->theme->baseUrl;
                 <h1>FREQUENTLY ASKED QUESTIONS</h1> 
                 <div class="col-md-12">
                     <div class="cat_box mrg-top-4">
-                        <?php
-                        if (!empty($faq)) {
-                            foreach ($faq as $f) {
-                                ?>   
-                                <button class="accordion"><h3><?php echo $f->question; ?></h3></button>
-                                <div class="panel">
-                                    <?php echo $f->answer; ?>
-                                </div>
-                                <?php
-                            }
-                        }
-                        ?>
+                        <div class="panel-group accordion style1" id="question" role="tablist" aria-multiselectable="true">
+							<?php
+							if (!empty($faq)) {
+								$i = 1;
+								foreach ($faq as $f) {
+									?>
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="question<?php echo $i; ?>">
+											<h4 class="panel-title">
+												<a class="collapsed" data-toggle="collapse" data-parent="#question" href="#collapseQuestion<?php echo $i; ?>" aria-expanded="false" aria-controls="collapseOne">
+													<?php echo $f->question; ?>
+												</a>
+											</h4>
+										</div><!-- end panel-heading -->
+										<div id="collapseQuestion<?php echo $i; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="question<?php echo $i; ?>" aria-expanded="false" style="height: 0px;">
+											<div class="panel-body">
+												<p><?php echo $f->answer; ?></p>
+											</div><!-- end panel-body -->
+										</div><!-- end collapse -->
+									</div><!-- end panel -->
+									<?php
+									$i++;
+								}
+							}
+							?>
+						</div>
                     </div>				
                 </div>
 

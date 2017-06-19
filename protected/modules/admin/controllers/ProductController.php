@@ -170,7 +170,7 @@ class ProductController extends Controller
 	}
 	
 	public function gridRelated($data){
-		return Product::model()->findByPk($data->id)->name;
+		return Product::model()->findByPk($data->related)->name;
 	}
 	
 	public function gridCategory($data){

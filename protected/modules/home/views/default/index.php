@@ -22,7 +22,7 @@ $baseUrl = Yii::app()->theme->baseUrl;
                     $link = $banner->link;
                 }
                 ?>   
-                <div> <a  href="<?php echo $link; ?>"><img data-u="image" src="<?php echo $baseUrl; ?>/img/<?php echo $banner->banner; ?>" /></a> </div>
+                <div> <a  href="<?php echo $link; ?>"><img data-u="image" src="<?php echo base_url(); ?>/images/banners/<?php echo $banner->banner; ?>" /></a> </div>
                 <?php
             }
             ?>
@@ -80,8 +80,8 @@ $baseUrl = Yii::app()->theme->baseUrl;
                             foreach ($category->product_list as $product) {
                                 ?>   
                                 <div class="col-md-3">
-                                    <div class="box_pro">
-                                        <div class="price_tag">$<?php echo $product->price; ?></div>
+                                    <div class="box_pro" style="height: 350px;">
+                                        <div class="price_tag">&#8377;<?php echo $product->price; ?></div>
                                         <div><a href="<?php echo  base_url().'/product?name='.$product->slug  ?>"><img height="156px" width="222px" src="<?php echo base_url(); ?>/images/products/<?php echo (!empty($product->product_main_image[0]->image)) ? $product->product_main_image[0]->image : ''; ?>" alt=""></a></div>
                                         <h1><?php echo $product->name; ?></h1>
                                         <p><?php echo $product->short_desc; ?></p>

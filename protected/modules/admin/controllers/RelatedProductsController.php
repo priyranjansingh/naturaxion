@@ -47,14 +47,21 @@ class RelatedProductsController extends Controller
 
 		if(isset($_POST['RelatedProducts']))
 		{
+			$product = $_POST['RelatedProducts']['product'];
+			//pre($_POST['RelatedProducts'], true);
 			$r = count($_POST['RelatedProducts']['related']);
-			for ($i=0; $i<$r; $i++) {
-				$model->product = $_POST['RelatedProducts']['product'];
-				$model->related = $_POST['RelatedProducts']['product'][$i];
+			if($r > 0){
+				for ($i=0; $i<$r; $i++) {
+					$m = new RelatedProducts;
+					$m->product = $product;
+					$m->related = $_POST['RelatedProducts']['related'][$i];
+					$m->save();
+				}
+				$this->redirect(array('product/view','id'=>$product));
+			} else {
+				$model->related = null;
+				$model->save();
 			}
-			//$model->attributes=$_POST['RelatedProducts'];
-			if($model->save())
-				$this->redirect(array('product/view','id'=>$model->id));
 		}
 
 		$this->render('create',array(
@@ -72,26 +79,32 @@ class RelatedProductsController extends Controller
 	{
 		$p = Product::model()->findByPk($product);
 		if($p === null){
-			$model=$this->loadModel($id);
+			$model=$this->loadModel($product);
 		} else {
-			$products = RelatedProducts::model()->findAll(array("condition" => "product = '".$id."'"));
+			$products = RelatedProducts::model()->findAll(array("condition" => "product = '".$p->id."'"));
 		}
+		$model = new RelatedProducts;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['RelatedProducts']))
 		{
-			RelatedProducts::model()->deleteAll(['product' => $_POST['RelatedProducts']['product']]);
+			$product = $_POST['RelatedProducts']['product'];
+			RelatedProducts::model()->deleteAll(['product' => $product]);
 			$r = count($_POST['RelatedProducts']['related']);
-			for ($i=0; $i<$r; $i++) {
-				$model = new RelatedProducts;
-				$model->product = $_POST['RelatedProducts']['product'];
-				$model->related = $_POST['RelatedProducts']['product'][$i];
+			if($r > 0){
+				for ($i=0; $i<$r; $i++) {
+					$m = new RelatedProducts;
+					$m->product = $product;
+					$m->related = $_POST['RelatedProducts']['related'][$i];
+					$m->save();
+				}
+				$this->redirect(array('product/view','id'=>$product));
+			} else {
+				$model->related = null;
+				$model->save();
 			}
-			//$model->attributes=$_POST['RelatedProducts'];
-			if($model->save())
-				$this->redirect(array('product/view','id'=>$model->id));
 		}
 
 		/*if($p === null){
@@ -101,6 +114,8 @@ class RelatedProductsController extends Controller
 		} else {*/
 			$this->render('related-update',array(
 				'products'=>$products,
+				'product' => $p,
+				'model' => $model
 			));
 		//}
 	}

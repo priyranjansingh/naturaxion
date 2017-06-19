@@ -27,55 +27,23 @@ $baseUrl = Yii::app()->theme->baseUrl;
                 <div class="product_inner">          
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="cat_box">
-                                <h1>Browse by Category</h1>
-                                <button class="accordion"><h3>Healthcare</h3></button>
-                                <div class="panel">
-                                    <ul>
-                                        <li><a href="#">Staghorn</a></li>
-                                        <li><a href="#">Platycerium bifurcatum</a></li>
-                                        <li><a href="#">Platycerium hillii</a></li>
-                                    </ul>
-                                </div>
-
-                                <button class="accordion"><h3>Nutraceutical</h3></button>
-                                <div class="panel">                 
-                                    <ul>
-                                        <li><a href="#">Staghorn</a></li>
-                                        <li><a href="#">Platycerium bifurcatum</a></li>
-                                        <li><a href="#">Platycerium hillii</a></li>
-                                    </ul>
-                                </div>
-
-                                <button class="accordion"><h3>Oral care</h3></button>
-                                <div class="panel">			
-                                    <ul>
-                                        <li><a href="#">Staghorn</a></li>
-                                        <li><a href="#">Platycerium bifurcatum</a></li>
-                                        <li><a href="#">Platycerium hillii</a></li>
-                                    </ul>
-                                </div>
-                                <button class="accordion"><h3>Body care</h3></button>
-                                <div class="panel">
-                                    <ul>
-                                        <li><a href="#">Staghorn</a></li>
-                                        <li><a href="#">Platycerium bifurcatum</a></li>
-                                        <li><a href="#">Platycerium hillii</a></li>
-                                    </ul>
-                                </div>
-                                <button class="accordion"><h3>Supplies</h3></button>
-                                <div class="panel">
-                                    <ul>
-                                        <li><a href="#">Staghorn</a></li>
-                                        <li><a href="#">Platycerium bifurcatum</a></li>
-                                        <li><a href="#">Platycerium hillii</a></li>
-                                    </ul>
-                                </div>
-                            </div>				
+							<div class="list-group categories">
+								<span href="#" class="list-group-item active">
+									Browse by Category
+								</span>
+								<a href="<?php echo base_url(); ?>/products" class="list-group-item">
+									<i class="fa fa-folder"></i> All
+								</a>
+								<?php foreach($categories as $cat): ?>
+								<a href="#" class="list-group-item">
+									<i class="fa fa-folder"></i> <?php echo $cat->name; ?>
+								</a>
+								<?php endforeach; ?>
+							</div>	
                         </div>
                         <div class="col-md-9">
                             <h1>PRODUCTS</h1>
-                            <div class="bread_cum"> <a href="product.html">Products</a> > <a href="#">Healthcare</a> > <a href="#">Nutraceutical</a> </div>
+                            <div class="bread_cum"> <a href="<?php echo base_url(); ?>/products">Products</a> > <a href="#">Healthcare</a> > <a href="#">Nutraceutical</a> </div>
                             <div class="product_details">
                                 <div class="product_detailsL">
                                     <div class="product_detailsIN zoomin frame">
@@ -169,7 +137,7 @@ $baseUrl = Yii::app()->theme->baseUrl;
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="box_pro">
-                                            <div class="price_tag">$30</div>
+                                            <div class="price_tag">&#8377;30</div>
                                             <div><img src="img/img6.jpg" alt=""></div>
                                             <h1>Lorem ipsum dolor sit</h1>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
@@ -177,7 +145,7 @@ $baseUrl = Yii::app()->theme->baseUrl;
                                     </div>
                                     <div class="col-md-4">
                                         <div class="box_pro">
-                                            <div class="price_tag">$30</div>
+                                            <div class="price_tag">&#8377;30</div>
                                             <div><img src="img/img7.jpg" alt=""></div>
                                             <h1>Lorem ipsum dolor sit</h1>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>
@@ -185,7 +153,7 @@ $baseUrl = Yii::app()->theme->baseUrl;
                                     </div>
                                     <div class="col-md-4">
                                         <div class="box_pro">
-                                            <div class="price_tag">$30</div>
+                                            <div class="price_tag">&#8377;30</div>
                                             <div><img src="img/img8.jpg" alt=""></div>
                                             <h1>Lorem ipsum dolor sit</h1>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec lobortis ex, vel luctus ligula. Vivamus</p>

@@ -19,7 +19,6 @@
         <link href="<?php echo $baseUrl; ?>/css/font-awesome.css" rel="stylesheet">
         <link href="<?php echo $baseUrl; ?>/css/animate.css" rel="stylesheet" type="text/css">
         <link href="<?php echo $baseUrl; ?>/css/style.css" rel="stylesheet" type="text/css">
-        <script src="<?php echo $baseUrl; ?>/js/modernizr.js"></script>
         <script  type="text/javascript" src="<?php echo $baseUrl; ?>/js/sliderunit.js"></script>
     </head>
     <body>

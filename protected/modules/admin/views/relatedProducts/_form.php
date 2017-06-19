@@ -27,6 +27,7 @@
 				$products = CHtml::listData(Product::model()->findAll(), 'id', 'name');
 			?>
 			<?php echo $form->dropDownList($model,'product',$products,$attrs); ?>
+			<?php echo $form->hiddenField($model,'product',array("value"=>"$product")); ?>
 			<?php echo $form->error($model,'product'); ?>
 		</div>
 		<div class="col-xs-6">

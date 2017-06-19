@@ -11,7 +11,6 @@
                         <div class="rightcol">
                             <div class="social_icon">
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fa fa-user"></i></a></li>
@@ -35,16 +34,22 @@
                                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                                 </div>
                                 <div id="navbar" class="navbar-collapse collapse">
-                                    <ul class="nav navbar-nav">
-                                        <li><a href="<?php echo base_url().'/about-us'; ?>">ABOUT US</a></li>
-                                        <li><a href="ayurveda.html" class="active">AYURVEDA</a></li>
-                                        <li><a href="product.html">OUR PRODUCTS</a></li>
-                                        <li><a href="shop.html">SHOP</a></li>
-                                        <li><a href="<?php echo base_url().'/contact-us'; ?>">CONTACT US</a></li>
-                                        <li><a href="clinic.html">CLINIC</a></li>
-                                        <li><a href="experience.html">Consumer Experience</a></li>
-                                        <li><a href="contact.html">CONTACT</a></li>
-                                    </ul>
+									<?php
+									//echo $this->action->Id;
+									$this->widget('zii.widgets.CMenu', array(
+										'items'=>array(
+											array('label'=>'Home', 'url'=>array('/'),'active'=>$this->action->Id=='index'?true:false),
+											// 'Products' menu item will be selected no matter which tag parameter value is since it's not specified.
+											array('label'=>'Products', 'url'=>array('/products'),'active'=>$this->action->Id=='products'?true:false),
+											array('label'=>'About Us', 'url'=>array('/about-us'),'active'=>$this->action->Id=='about'?true:false),
+											array('label'=>'Faq', 'url'=>array('/faq'),'active'=>$this->action->Id=='faq'?true:false),
+											array('label'=>'Contact Us', 'url'=>array('/contact-us'),'active'=>$this->action->Id=='contact'?true:false),
+										),
+										'htmlOptions' => array(
+											'class'=>'nav navbar-nav',
+										),
+									));
+									?>
                                 </div>
                             </nav>
                         </div>
