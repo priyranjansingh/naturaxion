@@ -110,7 +110,7 @@ body {
 	margin: 0;
 }
 .navbar ul li {
-	padding: 0 0 0 3px;
+	padding: 0 0 0 8px;
 	margin: 0;
 	list-style-type: none;
 	float: left;
@@ -123,9 +123,16 @@ body {
 	float: left;
 	text-align: left;
 }
+.navbar ul li:first-child {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	float: left;
+	text-align: left;
+}
 .navbar ul li a {
 	color: #000 !important;
-	font-size: 12px;
+	font-size: 11px;
 	font-family: Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	font-weight: normal;
@@ -133,7 +140,7 @@ body {
 }
 .navbar ul li a:hover {
 	color: #fff !important;
-	font-size: 12px;
+	font-size: 11px;
 	font-family: Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	font-weight: normal;
@@ -141,7 +148,7 @@ body {
 }
 .navbar ul li a.active {
 	color: #fff !important;
-	font-size: 12px;
+	font-size: 11px;
 	font-family: Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	font-weight: normal;
@@ -365,7 +372,7 @@ input[type=text]:focus {
 	width: 100%;
 }
 .clinic_inner {
-	background: url(../img/clinic_bg.jpg) top center no-repeat;
+	background: url(../img/clinic_bg.jpg) top center no-rbox_proepeat;
 	background-size: cover;
 	padding: 0 0 14px 0;
 }
@@ -1334,6 +1341,18 @@ input[type=text]:focus {
 	text-align: left;
 	text-transform: uppercase;
 }
+.cat_box h2 {
+    color: #0076a0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+	line-height: 25px;
+    font-weight: bold;
+    margin: 14px 0 0 0;
+	padding: 0 0 13px 0;
+	background:url(../img/downarrow2.png) bottom left no-repeat;	
+	text-align: left;
+	text-transform: uppercase;
+}
 .cat_box h3 {
     color: #7a9703;
     font-family: Arial, Helvetica, sans-serif;
@@ -1400,6 +1419,14 @@ div.tab button.active {
 .tabcontent ul li a:hover {
 	color: #97be0d;
 	text-decoration: none;    
+}
+div.panel p {
+	padding: 15px;
+	margin: 0;
+	color: #797979;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
 }
 
 

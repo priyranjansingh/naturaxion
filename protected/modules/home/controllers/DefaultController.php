@@ -44,6 +44,13 @@ class DefaultController extends Controller {
         
     }
     
+    public function actionFaq()
+    {
+        Yii::import('application.modules.admin.models.Qna');
+        $faq =  Qna::model()->findAll(array("condition" => "status = '1'"));
+        $this->render('faq',array('faq'=>$faq));
+    }        
+    
     
 
 }

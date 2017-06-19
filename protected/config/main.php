@@ -53,6 +53,7 @@ return array(
         'urlManager' => array(
             'urlFormat' => 'path',
             'rules' => array(
+                'faq' => 'home/default/faq',
                 'product' => 'home/default/product',
                 'about-us' => 'home/default/about',
                 'contact-us' => 'home/default/contact',

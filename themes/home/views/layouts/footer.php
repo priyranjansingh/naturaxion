@@ -19,7 +19,7 @@
                                         <h1>PAGE LINKS</h1>
                                         <ul>
                                             <li><a href="#"><strong>*</strong> Terms and Conditions</a></li>
-                                            <li><a href="#"><strong>*</strong> Shipping and Returns</a></li>
+                                            <li><a href="<?php echo base_url()."/faq";  ?>"><strong>*</strong> FAQ</a></li>
                                             <li><a href="#"><strong>*</strong> Disclaimer</a></li>
                                             <li><a href="#"><strong>*</strong> Privacy Policy</a></li>
                                             <li><a href="#"><strong>*</strong> Feedback</a></li>
